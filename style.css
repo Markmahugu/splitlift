@@ -1,0 +1,441 @@
+/* Style for the registration and login forms */
+
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style for error messages */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  /* Style for the search form */
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  /* other styles */
+  background-image: linear-gradient(to right, #FF4500, #FFA500);
+  animation: pulse 2s infinite linear;
+}
+
+@keyframes pulse {
+ 0% {
+   background-color: #FF4500;
+ }
+ 50% {
+   background-color: #FFA500;
+ }
+ 100% {
+   background-color: #FF4500;
+ }
+}
+
+/* Style for the search results */
+.result {
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.result h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.result span {
+  font-weight: bold;
+}
+
+.result a {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.result a:hover {
+  color: #3e8e41;
+}
+
+
+
+/* Styling for the form */
+
+body {
+  background: url('back g2.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+select, input[type="date"], input[type="time"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+select:focus, input[type="date"]:focus, input[type="time"]:focus {
+  outline: none;
+  border: 2px solid orange;
+}
+
+input[type="submit"] {
+  background-color: orange;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+/* Styling for form labels */
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Styling for form inputs */
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Styling for the search button */
+input[type="submit"] {
+  background: linear-gradient(to bottom right, red, orange);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(to bottom right, orange, red);
+  opacity: 0.8;
+}
+
+/* Styling for the search results */
+.result {
+  margin-top: 50px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.result h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.result p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result p span {
+  font-weight: bold;
+}
+
+.result a {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.result a:hover {
+  background-color: #3e8e41;
+}
+
+/* CSS for echoed data */
+.driver-details {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.driver-details h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.driver-details p {
+  margin: 5px 0;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.register-button:hover {
+  background-color: #3e8e41;
+}
+
+.register-button {
+  display: inline-block;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.register-button:hover {
+  background-color: #3e8e41;
+}
+
+/* CSS for the welcome page */
+
+/* Styling for the main heading */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+/* Styling for the navigation bar */
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Styling for the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.map-button:hover {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+/* styling for map*/
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  #map {
+      height: 300px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #map {
+      height: 200px;
+  }
+}

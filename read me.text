@@ -1,0 +1,82 @@
+/*Share Tech font*/
+@import url("https://fonts.googleapis.com/css?family=Share+Tech&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #223;
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eee;
+  font-size: 80px;
+  white-space: nowrap;
+  font-family: "Share Tech", sans-serif;
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%,
+  64% {
+    transform: translate(-48%, -50%) skew(0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-52%, -50%) skew(0deg);
+  }
+  62% {
+    transform: translate(-50%, -50%) skew(5deg);
+  }
+}
+
+.message::before,
+.message::after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.message::before {
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  animation: glitchTop 1s linear infinite;
+}
+
+@keyframes glitchTop {
+  2%,
+  64% {
+    transform: translate(-2px, -2px);
+  }
+  4%,
+  60% {
+    transform: translate(2px, -2px);
+  }
+  62% {
+    transform: translate(75px, 1px) skew(-15deg);
+  }
+}
+
+.message::after {
+  clip-path: polygon(0 68%, 100% 68%, 100% 100%, 0 100%);
+  animation: glitchBottom 1s linear infinite;
+}
+
+@keyframes glitchBottom {
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-42px, 2px) skew(35deg);
+  }
+}
+
+//this is the gliched twxt
+<div class="message" title="ARE YOU LOST?">ARE YOU LOST?</div>
