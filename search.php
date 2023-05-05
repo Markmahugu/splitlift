@@ -10,8 +10,79 @@
     <h1>Ride Sharing Platform - Search</h1>
 
     <form action="search.php" method="get">
+
     <label for="destination">Destination:</label>
-    <input type="text" id="destination" name="destination"><br><br>
+<div>
+  <select id="destination" name="destination" onchange="checkDestination(this.value)" required>
+  <option value="Athi River">Athi River</option>
+<option value="Bungoma">Bungoma</option>
+<option value="Busia">Busia</option>
+<option value="Chuka">Chuka</option>
+<option value="Embu">Embu</option>
+<option value="Eldoret">Eldoret</option>
+<option value="Garissa">Garissa</option>
+<option value="Gilgil">Gilgil</option>
+<option value="Homa Bay">Homa Bay</option>
+<option value="Isiolo">Isiolo</option>
+<option value="Iten">Iten</option>
+<option value="Kabarnet">Kabarnet</option>
+<option value="Kajiado">Kajiado</option>
+<option value="Kakamega">Kakamega</option>
+<option value="Kapenguria">Kapenguria</option>
+<option value="Kapsabet">Kapsabet</option>
+<option value="Karatina">Karatina</option>
+<option value="Kericho">Kericho</option>
+<option value="Keroka">Keroka</option>
+<option value="Kerugoya">Kerugoya</option>
+<option value="Kiambu">Kiambu</option>
+<option value="Kibwezi">Kibwezi</option>
+<option value="Kilifi">Kilifi</option>
+<option value="Kilgoris">Kilgoris</option>
+<option value="Kimilili">Kimilili</option>
+<option value="Kinango">Kinango</option>
+<option value="Kitale">Kitale</option>
+<option value="Kitengela">Kitengela</option>
+<option value="Kitui">Kitui</option>
+<option value="Kwale">Kwale</option>
+<option value="Lamu">Lamu</option>
+<option value="Litein">Litein</option>
+<option value="Lodwar">Lodwar</option>
+<option value="Luanda">Luanda</option>
+<option value="Machakos">Machakos</option>
+<option value="Makindu">Makindu</option>
+<option value="Malindi">Malindi</option>
+<option value="Maralal">Maralal</option>
+<option value="Marsabit">Marsabit</option>
+<option value="Matuu">Matuu</option>
+<option value="Meru">Meru</option>
+<option value="Migori">Migori</option>
+<option value="Molo">Molo</option>
+<option value="Muhoroni">Muhoroni</option>
+<option value="Mumias">Mumias</option>
+<option value="Murang'a">Murang'a</option>
+<option value="Mwea">Mwea</option>
+<option value="Nairobi">Nairobi</option>
+<option value="Nakuru">Nakuru</option>
+<option value="Nanyuki">Nanyuki</option>
+    <option value="Other">Other</option>
+    <!-- Add more options here -->
+  </select>
+  <input type="text" id="other_destination" name="other_destination" placeholder="Other Destination" style="display:none;">
+</div>
+
+<script>
+  function checkDestination(value) {
+    if (value === "Other") {
+      document.getElementById("other_destination").style.display = "block";
+      document.getElementById("other_destination").required = true;
+    } else {
+      document.getElementById("other_destination").style.display = "none";
+      document.getElementById("other_destination").required = false;
+    }
+  }
+</script>
+
+
     <label for="date">Date:</label>
     <input type="date" id="date" name="date"><br><br>
     <label for="time">Time:</label>
